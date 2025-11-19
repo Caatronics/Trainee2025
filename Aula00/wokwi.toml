@@ -1,0 +1,7 @@
+[wokwi]
+version = 1
+firmware = 'build/Aula00.bin'
+elf = 'Aula00/main.elf'
+
+[simulation]
+speed = 10.0  

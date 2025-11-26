@@ -1,0 +1,7 @@
+[wokwi]
+version = 1
+firmware = 'build/InputButton_Debounce.bin'
+elf = 'InputButton_Debounce/main.elf'
+
+[simulation]
+speed = 10.0  

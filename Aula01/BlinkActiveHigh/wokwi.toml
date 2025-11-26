@@ -1,0 +1,7 @@
+[wokwi]
+version = 1
+firmware = 'build/BlinkActiveHigh.bin'
+elf = 'BlinkActiveHigh/main.elf'
+
+[simulation]
+speed = 10.0  

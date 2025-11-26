@@ -1,0 +1,7 @@
+[wokwi]
+version = 1
+firmware = 'build/InputButton.bin'
+elf = 'InputButton/main.elf'
+
+[simulation]
+speed = 10.0  

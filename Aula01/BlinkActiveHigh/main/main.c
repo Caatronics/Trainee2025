@@ -8,6 +8,7 @@
 #define LED_3 GPIO_NUM_13
 
 void app_main() {
+  // esp_err_t gpio_set_direction(gpio_num_t gpio_num, gpio_mode_t mode)
   ESP_ERROR_CHECK(gpio_set_direction(LED_1, GPIO_MODE_OUTPUT));
   ESP_ERROR_CHECK(gpio_set_direction(LED_2, GPIO_MODE_OUTPUT));
   ESP_ERROR_CHECK(gpio_set_direction(LED_3, GPIO_MODE_OUTPUT));

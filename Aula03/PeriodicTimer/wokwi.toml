@@ -1,0 +1,7 @@
+[wokwi]
+version = 1
+firmware = 'build/PeriodicTimer.bin'
+elf = 'PeriodicTimer/main.elf'
+
+[simulation]
+speed = 10.0  

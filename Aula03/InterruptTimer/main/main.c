@@ -1,3 +1,8 @@
+// NOTA:
+// Aqui estou utilizando driver/timer.h, que é a biblioteca do ESP32 para 
+// controlar o timer de hardware.
+// Então aqui eu vou gerar interrupções REAIS DE HARDWARE
+
 #include "driver/gpio.h"       // Biblioteca para controle de GPIOs
 #include "driver/timer.h"      // Biblioteca para controle do Timer de Hardware
 #include "esp_log.h"           // Biblioteca para logs do ESP32
@@ -21,6 +26,7 @@ int counter; // Variável global para contagem
 bool IRAM_ATTR timer_isr_callback(void *args) {
   counter++;      // Incrementa o contador
   return pdFALSE; // Retorna falso para não forçar troca de contexto
+  // Basicamente ele volta ao contexto anterior (a Task anterior)
 }
 
 void app_main(void) {

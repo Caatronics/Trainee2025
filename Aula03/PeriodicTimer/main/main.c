@@ -1,8 +1,8 @@
-/*
-FUNCIONA PARECIDO COM UMA INTERRUPÇÃO PERIODICA
-ENTRETANTO, NÃO ACABA SENDO UMA INTERRUPÇÃO, POIS VOCE ACABA SEMPRE CHAMANDO UMA
-FUNCAO PERIODICAMENTE PARA SER EXECUTADA
-*/
+// NOTA:
+// Aqui estou utilizando esp_timer, que é um timer de precisão muito alta
+// que permite criar timers com intervalos muito curtos.
+// Ele funciona na camada de software, ou seja, não é um timer de hardware.
+// Ele agenda quando uma "tarefa" deve ser executada.
 
 #include "driver/gpio.h"
 #include "esp_log.h"

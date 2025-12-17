@@ -73,4 +73,11 @@ void app_main() {
   // O tempo é especificado em microssegundos
   // 2.000.000 us = 2 segundos
   esp_timer_start_periodic(timer, 2000000);
+
+  // Há uma opção de fazer um timer em modo ONE-SHOT
+  // O timer é iniciado e executa apenas uma vez:
+  // esp_timer_start_once(timer, 2000000);
+  // Você também consegue tornar esse timer "ONE-SHOT" em um periodico se no fim 
+  // da sua função de callback você chamar a função esp_timer_start_once(timer, 2000000);
+  // Ou seja, você inicializa um novo timer "ONE-SHOT" dentro da sua função de callback
 }
